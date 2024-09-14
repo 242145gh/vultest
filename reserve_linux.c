@@ -10,10 +10,10 @@
 /* ================================================== */
 /* |     CHANGE THIS TO THE CLIENT IP AND PORT      | */
 /* ================================================== */
-if !defined(CLIENT_IP) || !defined(CLIENT_PORT)
- define CLIENT_IP (char*)"192.168.64.7"
- define CLIENT_PORT (int)3000
-endif
+#if !defined(CLIENT_IP) || !defined(CLIENT_PORT)
+# define CLIENT_IP (char*)"192.168.64.7"
+# define CLIENT_PORT (int)3000
+#endif
 /* ================================================== */
 
 int main(void) {
